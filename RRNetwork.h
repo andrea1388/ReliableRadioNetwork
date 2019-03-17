@@ -1,4 +1,4 @@
-#include <SPI.h>
+//#include <SPI.h>
 #include <RF24.h>
 #include <LinkedList.h> // https://github.com/ivanseidel/LinkedList
 #include "RRNEnvelope.h"
@@ -99,7 +99,7 @@ void RRNetwork::write(byte *msg, byte len, byte dest, bool requestACK) {
 
 void RRNetwork::enqueue(RRNEnvelope *env) {
     #ifdef DEBUG
-    printf("EQ:%lu:",millis());
+    printf("EQ:%u:",millis());
     env->print();
     #endif
     outgoingPackets->add(env);
