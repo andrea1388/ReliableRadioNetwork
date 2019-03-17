@@ -1,6 +1,6 @@
 #include <SPI.h>
 #include <RF24.h>
-#include <LinkedList.h>
+#include <LinkedList.h> // https://github.com/ivanseidel/LinkedList
 #include "RRNEnvelope.h"
 #define RETRYDELAY 300 // ms
 #define RETRIES 10
